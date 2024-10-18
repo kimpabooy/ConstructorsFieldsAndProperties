@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace Övningar___Constructors__Fields___Properties
 {
-    internal class Bok
+    public class Bok
     {
-        private string _titel;
-        private string _författare;
-        private int _sidantal;
+        public string Titel { get; set; }
+        public string Författare { get; set; }
+        public int Sidantal { get; set; }
 
         public Bok(string titel, string författare, int sidantal)
         {
-            _titel = titel;
-            _författare = författare;
-            _sidantal = sidantal;
+            Titel = titel;
+            Författare = författare;
+            Sidantal = sidantal;
         }
 
     }
